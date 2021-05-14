@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="THÊM SÁCH"
+        android:textAlignment="center"
+        android:textColor="#08088A"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Mã sách :"
+        android:textColor="#2E2EFE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edMaSach_ThemSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã sách..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+
+            android:id="@+id/spTheLoai_ThemSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sách :"
+        android:textColor="#2E2EFE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edTenSach_ThemSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sách..." />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tác giả :"
+        android:textColor="#2E2EFE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edTacGia_ThemSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tác giả..." />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhà xuất bản:"
+        android:textColor="#2E2EFE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edNXB_ThemSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập nhà xuất bản..." />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá :"
+        android:textColor="#2E2EFE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edGia_ThemSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập giá..." />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số lượng :"
+        android:textColor="#2E2EFE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edSoluong_ThemSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số lượng..."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnThem_ThemSach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addBook"
+            android:text="Thêm"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="#58ACFA"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btnHuy_ThemSach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:onClick="CancelSach"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="#58ACFA"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

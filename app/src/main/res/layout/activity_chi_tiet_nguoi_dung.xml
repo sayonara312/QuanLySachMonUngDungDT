@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg5"
+    tools:context=".ui.ChiTietNguoiDungActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginBottom="15dp"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Sửa Người Dùng"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#2E2EFE"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập họ và tên..."
+            android:textStyle="italic"
+            android:id="@+id/edFullName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#2E2EFE"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số điện thoại..."
+            android:textStyle="italic"
+            android:id="@+id/edPhone"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:onClick="UpdateUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Cập nhật"
+                android:layout_weight="1"
+                android:background="#58ACFA"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:onClick="Huy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Hủy"
+                android:layout_weight="1"
+                android:background="#58ACFA"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

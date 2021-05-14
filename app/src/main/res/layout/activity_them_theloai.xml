@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="65dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:text="THÊM THỂ LOẠI"
+                android:textAlignment="center"
+                android:textColor="#08088A"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Mã thể loại :"
+                android:textColor="#2E2EFE"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtMaTheLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập mã thể loại..."
+                android:imeActionId="6"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên thể loại :"
+                android:textColor="#2E2EFE"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttentheloai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập tên thể loại..."
+                android:imeActionId="6"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả :"
+                android:textColor="#2E2EFE"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtmota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập mô tả..."
+                android:imeActionId="6"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vị trí :"
+                android:textColor="#2E2EFE"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtvitri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập vị trí..."
+                android:imeActionId="6"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="italic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHuyAddTheLoai"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Hủy"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:background="#58ACFA"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/btnAddTheLoai"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Thêm"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:background="#58ACFA"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/showtheloai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#58ACFA"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
